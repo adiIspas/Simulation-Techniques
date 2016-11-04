@@ -24,16 +24,43 @@
 
 % Partea II
 % Exercitiul 1
-lambda = 1;
+% lambda = 1;
+% n = 1000;
+% U = ex_1a(lambda, n);
+% [N,X] = hist(U);
+% for i = 1:length(N)-1
+%     N(i) = N(i)/(length(N) * (X(i+1)-X(i)));
+% end
+% 
+% sizee = size(N);
+% hold on
+% bar(X,N,1,'b');
+% plot(1:10,N);
+% hold off;
+
+% f(x) ~ fi/n*l; l = ai - ai-1 (lungimea intervalului) n = numarul de
+% valori din intervalul ala ...
+
+
+
+
+
+
+% Exercitiul 2
+lambda = 5;
 n = 1000;
-U = ex_1a(lambda, n);
+U = ex_2a(lambda, n);
+k = 1 + log2(n);
 [N,X] = hist(U);
-for i = 1:length(N)-1
-    N(i) = N(i)/length(N) * 1/(X(i+1)-X(i));
-end
+N = N/(length(U) *  (X(2) - X(1)));
+
+hold on
 bar(X,N,1,'w');
 
-
+v = min(U):0.1:max(U);
+densitate = lambda * power(v,-lambda-1); 
+plot(v,densitate);
+hold off;
 
 
 
