@@ -1,0 +1,19 @@
+function [ x ] = myExp( lambda )
+    
+    n = 0;
+    
+    z0 = rand();
+    z1 = rand();
+    
+    k = 1;
+    
+    while z1 < z0
+        k = k + 1;
+        z0 = z1;
+        z1 = rand();
+    end
+    
+    if mo
+
+end
+
