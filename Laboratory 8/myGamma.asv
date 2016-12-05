@@ -1,6 +1,0 @@
-function [ x ] = myGamma(alpha, lambda, v)
-    
-
-    
-end
-

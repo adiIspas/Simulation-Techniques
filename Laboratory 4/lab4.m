@@ -47,11 +47,12 @@
 
 
 % Exercitiul 2
-lambda = 5;
+lambda = 1;
 n = 1000;
 U = ex_2a(lambda, n);
 k = 1 + log2(n);
 [N,X] = hist(U);
+N
 N = N/(length(U) *  (X(2) - X(1)));
 
 hold on
