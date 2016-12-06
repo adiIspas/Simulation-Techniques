@@ -1,0 +1,17 @@
+% Curatam spatiul de lucru
+clear
+clc
+
+% Setam parametrii
+miu = 0;
+gamma = 1;
+numarValoriSelectie = 1000;
+
+% Generam valori de selectie
+valoriSelectie = zeros(1,numarValoriSelectie);
+for i = 1:numarValoriSelectie
+    valoriSelectie(i) = simulareVariabilaNormala(miu,gamma);
+end
+
+numarOptimDreptunghiuri = floor(1 + log2(numarValoriSelectie));
+[numarValoriInterval, cent

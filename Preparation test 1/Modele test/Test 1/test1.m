@@ -68,10 +68,12 @@ x_3 = 1:0.001:2;
 f_x3 = x_2*0;
 
 figure
+hold on
+bar(centre,numarValoriInterval,1,'g');
 plot(x_1,f_x1,'r')
 hold on
 plot(x_2,f_x2,'r')
 hold on
 plot(x_3,f_x3,'r')
-axis([-3 3 -3 3])
+%axis([-3 3 -3 3])
 hold off
