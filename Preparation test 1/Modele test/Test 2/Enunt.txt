@@ -1,0 +1,7 @@
+Subiecte test tehnici de simulare (gr. 341)
+O functie cu densitatea de repartitie n*X^(n-1) cand X apartine [0,1] si 0 in rest.
+1) Simulati variabila X cu 2 metode (una inversa si o alta metoda)
+2) Generati 1000 astfel de valori
+3) Histograma functiei
+4) Sa plotam si pentru intervalul [-1,2]
+5) Testul X^2

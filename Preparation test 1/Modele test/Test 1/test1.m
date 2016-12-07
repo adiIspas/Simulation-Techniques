@@ -4,7 +4,7 @@ clc
 
 % Setam parametrii
 alpha = determina_alpha();
-numarValoriSelectie = 1000;
+numarValoriSelectie = 10000;
 
 % Determinam valorile de selectie
 valoriSelectie = zeros(1,numarValoriSelectie);
@@ -69,11 +69,10 @@ f_x3 = x_2*0;
 
 figure
 hold on
-bar(centre,numarValoriInterval,1,'g');
 plot(x_1,f_x1,'r')
 hold on
 plot(x_2,f_x2,'r')
 hold on
 plot(x_3,f_x3,'r')
-%axis([-3 3 -3 3])
+axis([-3 3 -3 3])
 hold off
